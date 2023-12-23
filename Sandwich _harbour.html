@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="Photos/Sandwich/IMG-20231206-WA0005.jpg" type="image/x-icon">
+  <title>Sandwich Harbor Tour</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Basic Styles */
+    body {
+      background: url('Photos/Sandwich/IMG-20231208-WA0020.jpg')center center/cover no-repeat;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+    }
+
+    /* Header Styles */
+    header {
+      background: linear-gradient(to bottom, rgb(134, 99, 99), rgb(161, 70, 70));
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    /* Main Content Styles */
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+      .image {
+      text-align: center;
+      margin-bottom: 20px;
+      border: 8px solid;
+      aspect-ratio: 2/1;
+      border-image: linear-gradient(135deg, #f8cfcf, rgb(87, 32, 18)) 10;
+    }
+
+    .reasons {
+      margin-bottom: 20px;
+    }
+
+    .reasons ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+
+    .contact-info {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    h1 {
+      color: rgb(175, 94, 59);
+      margin: 10px auto;
+      width: 350px;
+      font-size: 2rem;
+      text-align: center;
+      border-bottom: 5px double #bc6c25;
+    }
+
+    /* Footer Styles */
+    footer {
+      background: linear-gradient(to bottom, rgb(134, 99, 99), rgb(161, 70, 70));
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      bottom: 0;
+      width: 100%;
+      position: relative;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1 class="head">Sandwich Harbour Tour</h1>
+    <a href="index.html" class="backbtn">Back to mainpage</a>
+  </header>
+
+  <!-- Main Content Section -->
+  <div class="container">
+    <p>Sandwich Harbour is a natural wonder on the Atlantic coast of Namibia, where towering dunes meet the ocean, and a
+      lagoon teems with birdlife. It is a place of history, beauty, and adventure that you can explore on a guided tour
+      with us.</p>
+
+    <div class="image">
+      <img src="Photos/Sandwich/IMG-20231208-WA0015.jpg" alt="Sandwich Harbor Tour" width="100%" height="400px">
+    </div>
+
+
+    <div class="reasons">
+      <h2>Reasons to Join Us on this Unforgettable Trip:</h2>
+      <ul>
+        <li>You will experience the thrill of a 4x4 drive through the Namib Desert, where you will see stunning
+          landscapes, wildlife, and archaeological sites.</li>
+        <li>You will witness the amazing spectacle of Sandwich Harbour, where dunes up to 100m-high plunge into the
+          Atlantic, creating a dramatic contrast of colours and shapes. You will have the opportunity to take stunning
+          photos and videos of this unique scenery.</li>
+        <li>You will enjoy a delicious champagne and a platter of local delicacies upon arrival at Sandwich Harbour,
+          while admiring the view and relaxing in the fresh breeze. You will also have the chance to explore the dunes,
+          or simply soak in the atmosphere of this serene and secluded spot.</li>
+        <li>You will have a professional and friendly guide who will ensure your safety and comfort throughout the tour.
+          You will also have access to a comfortable and well-equipped 4x4 vehicle, which will take you to and from
+          Sandwich Harbour.</li>
+      </ul>
+    </div>
+
+    <div class="contact-info">
+      <p>If you are looking for a tour that combines adventure, nature, and history, then Sandwich Harbour is the
+        perfect destination for you. Don’t miss this opportunity to discover one of the most dramatic sights in Namibia
+        and have a memorable experience that you will cherish for a lifetime. Book your tour with us today and get ready
+        for an amazing journey! You can WhatsApp us at +264 81 633 5151 for more information and reservations.</p>
+
+      <p>For more information and reservations, contact us via WhatsApp at +264 81 633 5151.</p>
+    </div>
+  </div>
+  <div>
+    <h1>Adventure in the dunes</h1>
+    <div class="containerimg">
+      <img src="Photos/Sandwich/IMG-20231208-WA0011.jpg" alt="sandwich tours" class="img">
+      <img src="Photos/Sandwich/IMG-20231208-WA0012.jpg" alt="sandwich tours" class="img">
+      <img src="Photos/Sandwich/IMG-20231208-WA0013.jpg" alt="sandwich tours" class="img">
+      <img src="Photos/Sandwich/IMG-20231208-WA0014.jpg" alt="sandwich tours" class="img">
+      <img src="Photos/Sandwich/IMG-20231208-WA0015.jpg" alt="sandwich tours" class="img">
+      <img src="Photos/Sandwich/IMG-20231208-WA0016.jpg" alt="sandwich tours" class="img">
+      <img src="Photos/Sandwich/IMG-20231208-WA0017.jpg" alt="sandwich tours" class="img">
+      <img src="Photos/Sandwich/IMG-20231208-WA0018.jpg" alt="sandwich tours" class="img">
+      <img src="Photos/Sandwich/IMG-20231208-WA0019.jpg" alt="sandwich tours" class="img">
+      <img src="Photos/Sandwich/IMG-20231208-WA0020.jpg" alt="sandwich tours" class="img">
+      <img src="Photos/Sandwich/IMG-20231208-WA0021.jpg" alt="sandwich tours" class="img">
+      <img src="Photos/Sandwich/IMG-20231208-WA0022.jpg" alt="sandwich tours" class="img">
+
+
+    </div>
+    <!-- Footer Section -->
+    <footer>
+      <p>&copy; 2023 Dominus Dune Driving. All rights reserved.</p>
+    </footer>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const prevBtn = document.querySelector('.prev-btn');
+        const nextBtn = document.querySelector('.next-btn');
+        const images = document.querySelector('.carousel-images');
+        const imageCount = document.querySelectorAll('.carousel-images img').length;
+
+        let counter = 0;
+        const slideInterval = 3000; // Interval between slides in milliseconds (e.g., 3000ms = 3 seconds)
+
+        const slideNext = () => {
+          counter++;
+          if (counter > imageCount - 1) {
+            counter = 0;
+          }
+          images.style.transform = `translateX(${-counter * 100}%)`;
+        };
+
+        const slidePrev = () => {
+          counter--;
+          if (counter < 0) {
+            counter = imageCount - 1;
+          }
+          images.style.transform = `translateX(${-counter * 100}%)`;
+        };
+
+        nextBtn.addEventListener('click', () => {
+          slideNext();
+        });
+
+        prevBtn.addEventListener('click', () => {
+          slidePrev();
+        });
+
+        let slideTimer = setInterval(slideNext, slideInterval);
+
+        // Pause automatic sliding when mouse enters the carousel
+        images.addEventListener('mouseenter', () => {
+          clearInterval(slideTimer);
+        });
+
+        // Resume automatic sliding when mouse leaves the carousel
+        images.addEventListener('mouseleave', () => {
+          slideTimer = setInterval(slideNext, slideInterval);
+        });
+      });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tour Gallery</title>
+  <link rel="stylesheet" href="style.css">
+<style>
+    body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.gallery {
+  position: relative;
+  width: 80%;
+  max-width: 800px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+}
+
+.slide {
+  display: none;
+  width: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+</style>
+</head>
+<body>
+  <div class="gallery-container">
+    <div class="gallery">
+      <div class="slide">
+        <img src="image1.jpg" alt="Tour Image 1">
+      </div>
+      <div class="slide">
+        <img src="image2.jpg" alt="Tour Image 2">
+      </div>
+      <!-- Add more images as needed -->
+    </div>
+  </div>
+
+  <script src="script.js">
+    let slideIndex = 0;
+showSlides(slideIndex);
+
+function showSlides(n) {
+  const slides = document.getElementsByClassName("slide");
+  if (n >= slides.length) {
+    slideIndex = 0;
+  }
+  if (n < 0) {
+    slideIndex = slides.length - 1;
+  }
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex].style.display = "block";
+}
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelector('.prev').addEventListener('click', () => plusSlides(-1));
+  document.querySelector('.next').addEventListener('click', () => plusSlides(1));
+});
+
+  </script>
+</body>
+</html>
